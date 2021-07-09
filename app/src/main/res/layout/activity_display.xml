@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <View
+        android:id="@+id/vBlueBG"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="#009DC4" />
+
+    <TextView
+        android:id="@+id/tvAddBuyer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="#009DE4"
+        android:drawableLeft="@drawable/back"
+        android:drawablePadding="20dp"
+        android:padding="10dp"
+        android:text="Buyer Details"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvOrganizationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddBuyer"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:text="Organization Name"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etOrganizationName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOrganizationName"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Organization Name" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vBlueBG"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="30dp"
+        android:text="Customer Name"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Name" />
+
+    <TextView
+        android:id="@+id/tvMobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/call"
+        android:drawablePadding="30dp"
+        android:text="Mobile Number"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etMobileNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMobileNumber"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Mobile Number" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobileNumber"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/email"
+        android:drawablePadding="30dp"
+        android:text="Email"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Email" />
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etEmail"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="30dp"
+        android:text="Address"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddress"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Address" />
+
+    <TextView
+        android:id="@+id/tvManufacturer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etAddress"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/manufacturer"
+        android:drawablePadding="30dp"
+        android:text="Manufacturer"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etManufacturer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvManufacturer"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Manufacturer Name" />
+
+    <TextView
+        android:id="@+id/tvTax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etManufacturer"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/tax"
+        android:drawablePadding="30dp"
+        android:text="Tax ID"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etTax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTax"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Tax ID" />
+
+    <TextView
+        android:id="@+id/tvCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTax"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/id"
+        android:drawablePadding="30dp"
+        android:text="Company ID"
+        android:textColor="#808080"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/etCompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCompany"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="20dp"
+        android:hint="Enter Company ID" />
+
+</RelativeLayout>
